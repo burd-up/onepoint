@@ -1,0 +1,267 @@
+
+.slideTwo {
+    height: 100vh;
+    width: 100vw;
+    background:linear-gradient(rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.05)), url('../../media/background/2.svg');
+    background-size: cover;
+    z-index: 11;
+}
+
+.slideTwo__title {
+    position: relative;
+    font-size: calc(54pt / 2.15);
+    font-family: 'DIN Pro';
+    top: calc(270 / 1530 * 100%);
+    left: calc(138 / 2050 * 100%);
+}
+
+.slideTwo__blockMessage {
+    height: 100%;
+    width: 76%;
+    background-color: #ffffff;
+    border-radius: 4vw;
+    overflow: hidden;
+/*    box-shadow: 0 0 0 5px #EEE;*/
+}
+
+.slideTwo__messageContainer {
+    display: flex;
+    position: relative;
+    top: calc(270 / 1530 * 100%);
+    left: calc(138 / 2050 * 100%);
+    width: 100%;
+    height: 58%;
+    align-items: center;
+}
+
+.slideTwo__message{
+    font-family: 'DIN Pro';
+    font-size: calc(54px / 2.15);
+    font-weight: 500;
+    position: relative;
+/*    box-sizing: border-box;*/
+    padding: 3.2vw;
+    padding-bottom: 7vh;
+/*    top: -18%;*/
+}
+.slideOne__thumbnail {
+    font-family: 'DIN Pro Bold';
+}
+
+.slideTwo__whiteBlockTop{
+    position: relative;
+    top: -15%;
+    width: 100%;
+    height: 3%;
+    z-index: 10;
+    background-color: rgba(255, 255, 255, 1) ;
+}
+
+.slideTwo__opacityBlock{
+    position: relative;
+    top: 85%;
+    width: 100%;
+    height: 15%;
+    z-index: 10;
+    /* Old browsers */
+    background-color: rgba(255, 255, 255, 0);
+    /* FF3.6-15 */
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%, rgb(255, 255, 255) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 80%, rgba(255, 255, 255, 1) 100%);
+}
+
+.slideTwo__sliderContainer{
+    width: 10px;
+}
+
+.slideTwo__slider{
+    -webkit-appearance: none;
+    position: relative;
+    right: calc(58vh/2.1);
+    width: 58vh;
+    height: 5px; /*ширина*/
+    border-radius: 3px;
+    background: black;
+    transform: rotate(90deg);
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slideTwo__slider::-webkit-slider-thumb {
+    transform: rotate(90deg);
+    -webkit-appearance: none;
+    width: 25px;
+    height: 105px;
+    background: url('../../media/elements/track.svg') 50% no-repeat;
+    background-size: auto 100%;
+    cursor: pointer;
+
+}
+/*------------------------------------elements-----------------------------------------*/
+
+.sperm1{
+    pointer-events: none;
+    position: absolute;
+    right: 100vw;
+    top: calc(200/1530 * 100%);
+    width: calc(1315/2050 * 33.3%);
+    opacity: 1;
+}
+.sperm1_animation{
+    animation: sperm1 3s ease 1 normal 0s;
+}
+.sperm2{
+    pointer-events: none;
+    position: absolute;
+    right: 100vw;
+    top: calc(195/1530 * 100%);
+    width: calc(880/2050 * 33.3%);
+    opacity: 0.55;
+}
+
+.sperm2_animation{
+    animation: sperm2 3s ease 1 normal 0s;
+}
+
+.sperm3{
+    pointer-events: none;
+    position: absolute;
+    right: 100vw;
+    top: calc(150/1530 * 100%);
+    width: calc(625/2050 * 33.3%);
+    opacity: 0.25;
+}
+
+.sperm3_animation{
+    animation: sperm3 4s ease 1 normal 0s;
+}
+
+.sperm4{
+    pointer-events: none;
+    position: absolute;
+    right: 100vw;
+    top: calc(825/1530 * 100%);
+    width: calc(270/2050 * 33.3%);
+    opacity: 1;
+}
+
+.sperm4_animation{
+    animation: sperm4 3s ease 1 normal 0s;
+}
+
+.sperm5{
+    pointer-events: none;
+    position: absolute;
+    right: 100vw;
+    top: calc(1035/1530 * 100%);
+    width: calc(270/2050 * 33.3%);
+    opacity: 0.25;
+}
+
+.sperm5_animation{
+    animation: sperm5 3.5s ease 1 normal 0s;
+}
+
+@keyframes sperm5 {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        transform: translate(10vh, 7vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 0.25;
+    }
+}
+@keyframes sperm3 {
+    0% {
+        opacity: 0;
+    }
+    10% {
+        transform: translate(10vh, 7vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 0.25;
+    }
+}
+@keyframes sperm4 {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        transform: translate(10vh, 7vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+@keyframes sperm1 {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        transform: translate(10vh, 7vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 1;
+    }
+}
+@keyframes sperm2 {
+    0% {
+        transform: translate(10vh, 7vh);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(0,0);
+        opacity: 0.55;
+    }
+}
+
+/*-------------------------------------------------адаптация-------------------------------------------------------*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .slideTwo__title {
+        font-size: calc(54pt / 2 * 0.74);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .slideTwo__title {
+        font-size: calc(54pt / 2 * 0.65);
+    }
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .slideTwo__title {
+        font-size: calc(54pt / 2 * 0.6);
+    }
+    .slideTwo__message{
+        font-size: calc(54px / 2.15 *0.75);
+    }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+    .slideTwo__title {
+        font-size: calc(54pt / 2 * 0.40);
+    }
+    .slideTwo__slider{
+        height: 3px; /*ширина*/
+    }
+    .slideTwo__slider::-webkit-slider-thumb {
+        height: 70px;
+    }
+    .slideTwo__message{
+        font-size: calc(54px / 2.15 *0.65);
+/*        margin-top: -28%;*/
+    }
+}

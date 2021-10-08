@@ -1,0 +1,74 @@
+.wrapper{
+    position:relative;
+    height: calc(530/1530 * 100vh);
+    width: 68%;
+    overflow: auto;
+    top: calc(-740/1530 * 100vh);
+    left: calc(590 / 2050 * 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: open 0.3s ease 1 normal 0s;
+}
+
+.wrapperHidden{
+    display: none;
+}
+
+.wrapper__text{
+    margin: 0;
+    font-size: 26px;
+}
+
+.wrapper__textTitle{
+    font-family: 'Gilroy-Heavy';
+    font-size: 30px;
+    color: #8cc9e8;
+    margin: 0;
+}
+
+
+/*------------------------------------elements-----------------------------------------*/
+@keyframes open {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*-------------------------------------------------адаптация-------------------------------------------------------*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .wrapper__text{
+        font-size: 22px;
+    }
+
+    .wrapper__textTitle{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+    .wrapper__text{
+        font-size: 20px;
+    }
+
+    .wrapper__textTitle{
+        font-size: 22px;
+    }
+    .wrapper{
+        height: calc(700/1530 * 100vh);
+        top: calc(-950/1530 * 100vh);
+
+    }
+
+}

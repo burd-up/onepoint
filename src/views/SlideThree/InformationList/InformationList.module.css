@@ -1,0 +1,163 @@
+.wrapper{
+    position: absolute;
+    top: calc(245/1530 *100%);
+    right: calc(125/2050*33.3%);
+    width: calc(1645/2050 * 100vw);
+    height: calc(1145/1530 * 100vh);
+    border-radius: calc(80/2050 * 100vw);
+    font-family: 'DIN Pro';
+    font-size: calc(65px / 2.15);
+    font-weight: 500;
+    background-color: #ffffff;
+    transition: all 0.2s linear 0s;
+}
+
+.wrapperHidden{
+    display: none;
+}
+
+.wrapper__paginator{
+    position: absolute;
+    bottom: calc(70/1530 * 100vh);
+    left: calc(590 / 2050 * 100%);
+    display: flex;
+    width: 90px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper__circle{
+    box-sizing: border-box;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    border: 1px solid;
+    transition: all 0.2s linear 0s;
+}
+
+.wrapper__circleActive{
+    box-sizing: border-box;
+    height: 11px;
+    width: 11px;
+    border-radius: 50%;
+    transition: all 0.2s linear 0s;
+    border: none;
+    background-color: #fc6da9;
+}
+
+.wrapper__arrowLeft{
+    width: 9px;
+    margin-right: 10px;
+}
+
+.wrapper__arrowRight{
+    margin-left: 10px;
+    width: 9px;
+    transform: rotate(180deg);
+}
+.wrapper__buttonCross{
+    border: none;
+    background: none;
+}
+.wrapper__x{
+    position: absolute;
+    top:calc(65/2050 * 100vw);
+    right: calc(65/2050 * 100vw);
+    max-height: calc(65/1530 * 100vh);
+    max-width: calc(65/2050 * 100vw);
+}
+
+.wrapper__title {
+    margin-left: calc(590 / 2050 * 100%);
+    height: 100%;
+}
+
+.wrapper__largeTitle {
+    position: relative;
+    top: calc(100 / 1530 * 100vh);
+    font-family: Neometric;
+    font-weight: 300;
+    font-size: calc(190pt / 2.15);
+    line-height: 107.3%;
+    margin: 0;
+}
+
+.wrapper__firstLine {
+    position: relative;
+    font-size: calc(54pt / 2.15);
+    font-family: 'DIN Pro';
+    top: calc(90 / 1530 * 100vh);
+    margin: 0 0 0 1%;
+}
+
+.wrapper__thumbnail {
+    font-weight: 700;
+}
+
+
+/*------------------------------------elements-----------------------------------------*/
+
+/*-------------------------------------------------адаптация-------------------------------------------------------*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .wrapper__firstLine {
+        font-size: calc(54pt / 2 * 0.74);
+    }
+
+    .wrapper__largeTitle {
+        font-size: calc(190pt / 2 * 0.74);
+    }
+    .wrapper{
+        font-size: calc(65px / 2.15*0.85);
+    }
+    .slideThree__button {
+        height: calc(106 * 0.74px);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .wrapper__firstLine {
+        font-size: calc(54pt / 2 * 0.55);
+    }
+
+    .wrapper__largeTitle {
+        font-size: calc(190pt / 2 * 0.55);
+    }
+    .wrapper{
+        font-size: calc(65px / 2.15*0.75);
+    }
+    .slideThree__button {
+        height: calc(106 * 0.55px);
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 767px) {
+    .wrapper__firstLine {
+        font-size: calc(54pt / 2 * 0.4);
+    }
+
+    .wrapper__largeTitle {
+        font-size: calc(190pt / 2 * 0.3);
+    }
+    .wrapper{
+        font-size: calc(65px / 2.15*0.55);
+    }
+    .slideThree__button {
+        height: calc(106 * 0.3px);
+        margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 419px) {
+    .wrapper__firstLine {
+        font-size: calc(54pt / 2 * 0.40);
+    }
+
+    .wrapper__largeTitle {
+        font-size: calc(190pt / 2 * 0.23);
+    }
+    .wrapper{
+        height: calc(1245/1530 * 100vh);
+    }
+
+}
